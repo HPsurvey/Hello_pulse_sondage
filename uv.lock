@@ -908,6 +908,15 @@ wheels = [
 ]
 
 [[package]]
+name = "distro"
+version = "1.9.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/fc/f8/98eea607f65de6527f8a2e8885fc8015d3e6f5775df186e443e0964a11c3/distro-1.9.0.tar.gz", hash = "sha256:2fa77c6fd8940f116ee1d6b94a2f90b13b5ea8d019b98bc8bafdcabcdd9bdbed", size = 60722, upload-time = "2023-12-24T09:54:32.31Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl", hash = "sha256:7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2", size = 20277, upload-time = "2023-12-24T09:54:30.421Z" },
+]
+
+[[package]]
 name = "dnspython"
 version = "2.7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1178,7 +1187,9 @@ dependencies = [
     { name = "dbt-postgres" },
     { name = "ipykernel" },
     { name = "jupyter" },
+    { name = "kernel" },
     { name = "matplotlib" },
+    { name = "notebook" },
     { name = "numpy" },
     { name = "optuna" },
     { name = "pandas" },
@@ -1202,7 +1213,9 @@ requires-dist = [
     { name = "dbt-postgres", specifier = ">=1.9.0" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "kernel", specifier = ">=0.8.0" },
     { name = "matplotlib", specifier = ">=3.10.3" },
+    { name = "notebook", specifier = ">=7.4.4" },
     { name = "numpy", specifier = ">=2.3.1" },
     { name = "optuna", specifier = ">=4.4.0" },
     { name = "pandas", specifier = ">=2.3.0" },
@@ -1693,6 +1706,23 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b9/7d/160595ca88ee87ac6ba95d82177d29ec60aaa63821d3077babb22ce031a5/jupyterlab_widgets-3.0.15.tar.gz", hash = "sha256:2920888a0c2922351a9202817957a68c07d99673504d6cd37345299e971bb08b", size = 213149, upload-time = "2025-05-05T12:32:31.004Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/43/6a/ca128561b22b60bd5a0c4ea26649e68c8556b82bc70a0c396eebc977fe86/jupyterlab_widgets-3.0.15-py3-none-any.whl", hash = "sha256:d59023d7d7ef71400d51e6fee9a88867f6e65e10a4201605d2d7f3e8f012a31c", size = 216571, upload-time = "2025-05-05T12:32:29.534Z" },
+]
+
+[[package]]
+name = "kernel"
+version = "0.8.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e8/65/f5d007e6213a7f85f4700d10099cd1e1058ce9d1d4dfc56b865c7fa3434c/kernel-0.8.0.tar.gz", hash = "sha256:627a9b846b473281bacc87f9dfaa40950e69606a05dabde99c7c0651ae5ada05", size = 114140, upload-time = "2025-07-16T16:33:11.486Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6e/85/09bbb6a0a497f0c6128e02ce41a144ef39c237eb63adfc11c4982404cd20/kernel-0.8.0-py3-none-any.whl", hash = "sha256:84695e7352bfcab085249785de75531727de8e0755dc2691ced75ae5bfc7544f", size = 106362, upload-time = "2025-07-16T16:33:09.748Z" },
 ]
 
 [[package]]
